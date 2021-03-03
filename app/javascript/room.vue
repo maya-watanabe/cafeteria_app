@@ -2,8 +2,8 @@
     <div id="app">
         <template v-for="stream in remoteStreams">
             <!-- ①srcObjectをバインドする -->
-            <video 
-                autoplay 
+            <video
+                autoplay
                 playsinline
                 :srcObject.prop="stream"
             ></video>
@@ -22,7 +22,7 @@
             </option>
             </select>
 
-            カメラ: 
+            カメラ:
             <select v-model="selectedVideo" @change="onChange">
             <option disabled value="">Please select one</option>
             <option v-for="(video, key, index) in videos" v-bind:key="index" :value="video.value">
@@ -38,7 +38,7 @@
 </template>
 
 <script>
-const API_KEY = "1cbedba6-ff5d-460c-a90c-537347472b29"; 
+const API_KEY = "1cbedba6-ff5d-460c-a90c-537347472b29";
 // const Peer = require('../skyway-js');
 export default {
     data: function () {
@@ -75,7 +75,7 @@ export default {
                 return;
             }
             this.roomOpened = false;
-t           this.remoteStreams = []; //追記２０２０/05/23
+          this.remoteStreams = []; //追記２０２０/05/23
             this.room.close();
         },
         // 「div(joinTrigger)が押される＆既に接続が始まっていなかったら接続」するリスナーを設置
@@ -140,7 +140,7 @@ t           this.remoteStreams = []; //追記２０２０/05/23
         //カメラの情報を取得
         deviceInfos
         .filter(deviceInfo => deviceInfo.kind === 'videoinput')
-        .map(video => this.videos.push({text: video.label || `Camera  ${this.videos.length - 1}`, value: video.deviceId}));      
+        .map(video => this.videos.push({text: video.label || `Camera  ${this.videos.length - 1}`, value: video.deviceId}));
     }
 }
 </script>

@@ -1,6 +1,6 @@
 
-<div class="center-jumbotron">
-<div class="container">
+<div class="jumbotron text-center" style="background:url(assets/home-background.jpg);background-size:cover;height:350px;">
+<div class="title">
 <h1>Cafeteria</h1>
 <p>
   行けば知り合いに会える、オンラインの学食
@@ -9,29 +9,33 @@
 </div>
 </div>
 
-<div class="explanation">
+<div class="wrapper explanation">
 <h3>使い方</h3>
 
+<div class="explanation-items">
 <div class="explanation-item">
-  <div class="pictures"><img src="assets/school.png" width="350" height="350"></div>
+  <div class="pictures"><%= image_tag 'school.png', :width => '250', :height => '250' %></div>
   <p>入れるのは同学の人だけ</p>
 </div>
 
 <div class="explanation-item">
-  <div class="pictures"><img src="assets/choosing.png" width="350" height="350"></div>
+  <div class="pictures"><%= image_tag 'choosing.png', :width => '250', :height => '250' %></div>
   <p>テーブルを選んで会話に参加</p>
 </div>
 
 <div class="explanation-item">
-  <div class="pictures"><img src="assets/talking.png" width="350" height="350"></div>
+  <div class="pictures"><%= image_tag 'talking.png', :width => '250', :height => '250' %></div>
   <p>チャットや通話で情報交換</p>
 </div>
-
+</div>
 </div>
 
-<div class="cafeteria">
+<div class="wrapper cafeteria">
+<h3>参加しよう<h3>
+<div class="table-all">
 <a href="/table1" class="tables">table1</a>
 <a href='/table2' class="tables">table2</a>
 <a href='/table3' class="tables">table3</a>
 <a href='/table4' class="tables">table4</a>
+</div>
 </div>

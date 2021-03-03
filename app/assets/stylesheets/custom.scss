@@ -35,6 +35,8 @@ textarea {
 
 /* header */
 
+
+
 #logo {
   float: left;
   margin-right: 10px;
@@ -116,15 +118,19 @@ aside {
   /* forms */
 
 input, textarea, select, .uneditable-input {
-    border: 1px solid #bbb;
+
+    border: 1px solid #87CEFA;
     width: 100%;
     margin-bottom: 15px;
+    box-shadow: 2px 2px 5px 0px rgba(0,0,0,0.2);
     @include box_sizing;
 }
 
 input {
     height: auto !important;
 }
+
+
 
 #error_explanation {
   color: red;
@@ -169,66 +175,81 @@ checkbox {
 
 /*Home Cafeteria*/
 
+.wrapper{
+  padding:100px 50px;
+}
+
+.table-all{
+  display:flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
 .tables {
-  display: inline-block;
-  max-width: 400px;
-  margin:0 auto;
-  background-color: #9ec34b;
-  font-size: 3em;
-  color: #84a01f;
-  text-decoration: none;
+  background-color: #B0E0E6;
+  font-size: 30px;
+  color: #87CEEB;
   font-weight: bold;
-  padding: 40px 40px;
   border-radius: 4px;
-  border-bottom: 4px solid #84a01f;
+  border-bottom: 4px solid #87CEEB;
   text-shadow: 1px 1px 1px rgba(255,255,255,0.7);
-  width:50%
-
+  width:40%;
+  height:100px;
+  text-align: center;
+  line-height: 100px;
+  margin-bottom: 20px;
 }
 
-.center-jumbotron{
-  height:700px;
-  background-image:url(home-background.jpg);
-  background-size:cover;
-}
 
-.center-jumbotron{
-  .container{
-    width:600px;
-    margin:0 auto;
+
+.jumbotron{
+  .title{
     color:white;
     opacity:0.9;
   }
   h1{
-  font-size: 12em;
-  margin:200px 0 200px 100px;
+  font-size: 60px;
+  opacity: 1.0;
   }
   p{
-  font-size: 1.3em;
+  font-size: 15px;
+  opacity: 1.0;
   }
 }
 
-.explanation{
-  text-align:center;
-  margin:40px auto;
+.explanation-items{
+  display:flex;
+  justify-content: space-around;
 }
 .explanation-item{
-  float:left;
-  width:33.33%;
+  // float:left;
+  // width:33.33%;
   font-size:1.3em;
+}
+
+.explanation-item p{
+  font-weight: 600;
+}
+.explanation h3, .cafeteria h3{
+  margin-bottom:50px;
+  text-align: center;
+}
+
+.pictures{
+  margin-bottom: 10px;
 }
 
 .btn-sit{
   display: inline-block;
   max-width: 180px;
   text-align: left;
-  background-color: #9ec34b;
+  background-color:#B0E0E6 ;
   font-size: 16px;
-  color: #84a01f;
+  color: #87CEEB;
   text-decoration: none;
   font-weight: bold;
   padding: 8px 24px;
   border-radius: 4px;
-  border-bottom: 4px solid #84a01f;
+  border-bottom: 4px solid #87CEEB;
   text-shadow: 1px 1px 1px rgba(255,255,255,0.7);
 }
