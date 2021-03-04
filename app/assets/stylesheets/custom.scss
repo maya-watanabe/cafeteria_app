@@ -206,11 +206,14 @@ checkbox {
 }
 
 
-
+.top-wrapper{
+  height:500px;
+}
 .jumbotron{
   .title{
-    color:white;
-    opacity:0.9;
+    padding-top: 90px;
+    color:#191970;
+    opacity:0.8;
   }
   h1{
   font-size: 60px;
@@ -219,6 +222,7 @@ checkbox {
   p{
   font-size: 15px;
   opacity: 1.0;
+  font-weight: bold;
   }
 }
 

@@ -8,6 +8,7 @@ Rails.application.routes.draw do
   get    '/table3',  to: 'static_pages#table3'
   get    '/table4',  to: 'static_pages#table4'
   get    '/room1',   to: 'rooms#show'
+  get    '/room2',   to: 'rooms#show2'
   get    '/signup',  to: 'users#new'
   get    '/login',   to: 'sessions#new'
   post   '/login',   to: 'sessions#create'

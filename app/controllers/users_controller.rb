@@ -41,6 +41,10 @@ class UsersController < ApplicationController
     redirect_to users_url
   end
 
+    def index
+        @users = User.all
+    end
+
 
 end
 
