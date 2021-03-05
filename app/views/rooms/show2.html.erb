@@ -1,6 +1,23 @@
-<div id="room">
- <room />
-</div>
+<div id="app">
+        <video id="my-video" muted="true" width="500" autoplay playsinline></video>
 
-<%= javascript_pack_tag 'room' %>
-<%= stylesheet_pack_tag 'room' %>
+        マイク:
+        <select v-model="selectedAudio" @change="onChange">
+          <option disabled value="">Please select one</option>
+          <option v-for="(audio, key, index) in audios" v-bind:key="index" :value="audio.value">
+            {{ audio.text }}
+          </option>
+        </select>
+
+        カメラ:
+        <select v-model="selectedVideo" @change="onChange">
+          <option disabled value="">Please select one</option>
+          <option v-for="(video, key, index) in videos" v-bind:key="index" :value="video.value">
+            {{ video.text }}
+          </option>
+        </select>
+
+    </div>
+
+<%= javascript_pack_tag 'room2' %>
+<%= stylesheet_pack_tag 'room2' %>

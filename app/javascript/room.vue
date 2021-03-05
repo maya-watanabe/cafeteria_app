@@ -2,11 +2,7 @@
   <div id="app">
     <template v-for="stream in remoteStreams">
       <!-- ①srcObjectをバインドする -->
-      <video
-      autoplay
-      playsinline
-      :srcObject.prop="stream"
-      ></video>
+      <video autoplay playsinline :srcObject.prop="stream"></video>
     </template>
     <video id="my-video" muted="true" width="500" autoplay playsinline></video>
     <p>ROOM ID: <span id="room-id">{{ roomId }}</span></p>
@@ -38,8 +34,9 @@
 </template>
 
 <script>
-const API_KEY = "1cbedba6-ff5d-460c-a90c-537347472b29";
-//const Peer = require('../skyway-js');
+ const API_KEY = "1cbedba6-ff5d-460c-a90c-537347472b29";
+// const Peer = require('skyway-js');
+console.log(API_KEY)
 export default {
   data: function () {
     return {
@@ -127,6 +124,7 @@ export default {
     const data = JSON.parse(element.getAttribute('data'))
     this.roomId = data.roomId
     //ここでpeerのリスナーを設置
+    console.log(API_KEY)
     this.peer = new Peer({key: API_KEY, debug: 3}); //新規にPeerオブジェクトの作成
 
     //デバイスへのアクセス

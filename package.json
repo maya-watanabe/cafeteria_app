@@ -8,6 +8,7 @@
     "@rails/webpacker": "4.3.0",
     "bootstrap": "3.4.1",
     "jquery": "3.4.1",
+    "skyway-js": "^4.4.0",
     "turbolinks": "^5.2.0",
     "vue": "^2.6.12",
     "vue-loader": "^15.9.6",

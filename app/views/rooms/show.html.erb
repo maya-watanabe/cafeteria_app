@@ -1,9 +1,12 @@
-<div id="room">
- <room />
-</div>
 
-<%= javascript_pack_tag 'room' %>
-<%= stylesheet_pack_tag 'room' %>
+<% props = {
+    roomId: "aiueo"
+  }.to_json
+%>
+
+<div id='room' data="<%= props %>">
+    <room/>
+</div>
 
 <%= javascript_pack_tag 'room' %>
 <%= stylesheet_pack_tag 'room' %>

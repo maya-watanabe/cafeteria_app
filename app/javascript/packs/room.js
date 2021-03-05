@@ -9,3 +9,4 @@ document.addEventListener('DOMContentLoaded', () => {
     components: { Room }
   })
 })
+console.log("Yes")
